@@ -127,7 +127,7 @@ const Product = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await publicRequest.get(`products/find/${productId}`);
+        const res = await publicRequest.get(`/api/products/find/${productId}`);
         setProduct(res.data);
       } catch (error) {}
     };
